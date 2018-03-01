@@ -12,7 +12,11 @@ var users = require('./routes/users');
 
 var app = express();
 
-mongoose.connect('mongodb://localhost:27017/shopping');
+//mongoose.connect('mongodb://localhost:27017/shopping');
+
+//Connection to Database Mlab
+
+mongoose.connect('mongodb://app_ecommerce:Enero2018@ds151508.mlab.com:51508/ecommerce_desa');
 
 // view engine setup
 //app.set('views', path.join(__dirname, 'views'));
