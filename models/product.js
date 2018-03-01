@@ -4,13 +4,13 @@ var Schema = mongoose.Schema;
 //Creacion de Array Subdocumentos
 
 var proveedorSchema = new Schema({razonSocial: 'string', email: 'string'});
-var indicadorSchema = new Schema({porc_rent: 'string');
+var indicadorSchema = new Schema({porc_rent: 'string'});
 
 var schema = new Schema({
     codigo: {type: String, required: true},
     nombre: {type: String, required: true},
-    description: {type: String, required: true},
-    imagePath: {type: String, required: true},
+    descripcion: {type: String, required: true},
+    rutaImagen: {type: String, required: true},
     categoria: {type: String, required: true},
     estado: {type: String, required: true},
     proveedores: [proveedorSchema],
