@@ -6,6 +6,7 @@ var Schema = mongoose.Schema;
 var proveedorSchema = new Schema({razonSocial: 'string', email: 'string'});
 var indicadorSchema = new Schema({porc_rent: 'string'});
 
+// Creacion campos asociados al Producto
 var schema = new Schema({
     codigo: {type: String, required: true},
     nombre: {type: String, required: true},
