@@ -24,7 +24,7 @@ var schema = new Schema({
     ivaVenta: {type: Number, required: true},
     totalVenta: {type: Number, required: true},
     rentabilidad: [indicadorSchema],
-    observaciones: {type: String, required: true},
+    observaciones: {type: String, required: true}
 });
 
 module.exports = mongoose.model('Product', schema);
